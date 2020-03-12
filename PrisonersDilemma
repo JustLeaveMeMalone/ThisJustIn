@@ -1,0 +1,14 @@
+import random
+def prisoner():
+  d = random.randint(0,1)
+  a = input('Will you DEFECT or COOPERATE? Enter 0 to DEFECT, 1 to COOPERATE\n')
+  if d == 1:
+    if a == 1:
+      print("You and your accomplice cooperate, you both get 3 years.\n")
+    if a == 0:
+      print("Your accomplice cooperates but you turn on them, they get 10 years and you go free.\n")
+  if d == 0:
+    if a == 1:
+      print("You cooperate but your accomplice turns on you, you get 10 years and they go free.\n")
+    if a == 0:
+      print("You both turn on each other, by defecting you give them more than enough to lock you both up for 6 years.\n")
